@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View event information and register with Eventora.">
+    <title>Event Details | Eventora</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a class="logo" href="index.html">Eventora<span>.</span></a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="index.html" data-nav="index.html">Home</a>
+                <a href="events.html" data-nav="events.html">Explore Events</a>
+                <a href="register.html" data-nav="register.html">Register</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme">☼</button>
+        </div>
+    </header>
+
+    <main class="container page-main">
+        <a class="back-link" href="events.html">← Back to events</a>
+        <section id="eventDetails" class="event-details-wrapper" aria-live="polite">
+            <p class="loading-text">Loading event details...</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a class="logo" href="index.html">Eventora<span>.</span></a>
+            <p>Discover experiences. Create memories.</p>
+            <small>© 2026 Eventora. Built as a web designing project.</small>
+        </div>
+    </footer>
+
+    <script src="./js/events.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

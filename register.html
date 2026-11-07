@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for an upcoming Eventora event.">
+    <title>Register | Eventora</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-container">
+            <a class="logo" href="index.html">Eventora<span>.</span></a>
+            <nav class="nav-links" aria-label="Main navigation">
+                <a href="index.html" data-nav="index.html">Home</a>
+                <a href="events.html" data-nav="events.html">Explore Events</a>
+                <a href="register.html" data-nav="register.html">Register</a>
+            </nav>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle light and dark theme">☼</button>
+        </div>
+    </header>
+
+    <main class="container page-main">
+        <section class="page-heading centered-heading">
+            <span class="eyebrow">SAVE YOUR SPOT</span>
+            <h1>Event registration</h1>
+            <p>Enter your details below to register for an event.</p>
+        </section>
+
+        <section class="registration-layout">
+            <div class="registration-aside">
+                <span class="eyebrow">A FEW QUICK DETAILS</span>
+                <h2>Be part of the experience.</h2>
+                <p>Complete the form to save your registration on this device. This demo project does not process payments or send emails.</p>
+                <div class="aside-feature"><span>01</span><div><strong>Choose an event</strong><small>Select the experience you want to attend.</small></div></div>
+                <div class="aside-feature"><span>02</span><div><strong>Share your details</strong><small>Provide accurate contact information.</small></div></div>
+                <div class="aside-feature"><span>03</span><div><strong>You're registered</strong><small>See your confirmation instantly.</small></div></div>
+            </div>
+
+            <form class="registration-form" id="registrationForm" novalidate>
+                <div class="form-heading">
+                    <h2>Registration form</h2>
+                    <p>All fields marked with * are required.</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="fullName">Full name *</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" autocomplete="name" required>
+                    <small class="field-error" id="nameError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address *</label>
+                    <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                    <small class="field-error" id="emailError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone number *</label>
+                    <input type="tel" id="phone" name="phone" placeholder="10-digit mobile number" autocomplete="tel" inputmode="numeric" required>
+                    <small class="field-error" id="phoneError"></small>
+                </div>
+
+                <div class="form-group">
+                    <label for="eventSelect">Select event *</label>
+                    <select id="eventSelect" name="eventId" required>
+                        <option value="">Choose an event</option>
+                    </select>
+                    <small class="field-error" id="eventError"></small>
+                </div>
+
+                <button class="btn btn-primary submit-button" type="submit">Complete registration →</button>
+                <p class="form-note">Your information is stored locally in this browser for this project demo.</p>
+                <div class="success-message" id="successMessage" role="status" hidden></div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <a class="logo" href="index.html">Eventora<span>.</span></a>
+            <p>Discover experiences. Create memories.</p>
+            <small>© 2026 Eventora. Built as a web designing project.</small>
+        </div>
+    </footer>
+
+    <script src="./js/events.js"></script>
+    <script src="./js/registration.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
